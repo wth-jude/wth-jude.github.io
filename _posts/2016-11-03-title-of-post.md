@@ -1,13 +1,18 @@
 ---
 layout: post
 title: This is the title of the post
-postHero: Me, Myself, and I
+postHero: /images/shark.jpg
+author: Me, Myself, and I
 authorTwitter: http://twitter.com/mhartl
 gravatar: https://gravatar.com/avatar/ffda7d145b83c4b118f982401f962ca6?s=150
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
 ---
 
-Call me *Ishmael*. Some years ago-*never mind how long precisely*-having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world. It is a way I have of driving off the spleen and regulating the circulation.
+Call me *Ishmael*. Some years ago–*never mind how long
+precisely*–having little or no money in my purse, and nothing
+particular to interest me on shore, I thought I would sail about a little
+and see the watery part of the world. It is a way I have of driving off
+the spleen and regulating the circulation.
 
 <img class="pull-left" src="http://placekitten.com/g/400/200"
      alt="kitten">

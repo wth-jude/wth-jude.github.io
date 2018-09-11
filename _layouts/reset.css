@@ -46,7 +46,9 @@ a img {
 }
 /* END RESET*/
 
+
 /* GLOBAL STYLES */
+
 html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
@@ -198,7 +200,7 @@ h4 {
 }
 .col-two .col-aside {
   flex: 0 0 20em;
-  order: 0;
+  order: 1;
 }
 .col-two .col-content {
   flex: 1;
@@ -267,6 +269,11 @@ h4 {
   background-color: #000;
   color: #fff;
 }
+.half-hero {
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
+}
 
 /* SOCIAL STYLES */
 .social-list {
@@ -306,6 +313,17 @@ h4 {
   margin-bottom: 1.5rem;
   text-align: center;
   }
+.home-section h4 {
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+.home-section  .post-header {
+    text-align: center;
+  }
+.home-section .blog-posts {
+  margin: auto;
+  width: 75%;
+}
 .home-callout {
   display: flex;
   align-items: center;
@@ -448,4 +466,116 @@ h4 {
   background-size: cover;
   height: 6em;
   margin-bottom: 1.5em;
+}
+.post {
+  width: 100%;
+}
+.post-content,
+.post-footer {
+  margin: auto;
+  max-width: 40em;
+  width: 85vw;
+}
+.pull-left {
+  float: left;
+  margin: 2em 2em 2em -2em;
+}
+.pull-right {
+  float: right;
+  margin: 2em -2em 2em 2em;
+}
+.post-aside {
+  background-color: rgba(0, 0, 0, 0.1);
+  float: right;
+  margin: 0 0 2m 2m;
+  padding: 2em;
+}
+.post .post-header {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+.post-content{
+  font-size: 1.1rem;
+}
+.post-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 3em;
+  padding-top: 2em;
+}
+
+/* MEDIA SIZING */
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+
+  /* HEADER STYLES */
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    margin-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+
+  /* HOME STYLES */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    flex: 1;
+  }
+  .bio-box {
+    float: none;
+    font-size: 1.3rem;
+    width: auto;
+  }
+
+  /* BLOG STYLES */
+  .post-aside {
+    display: none;
+  }
+  .blog-recent {
+    display: none;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+
+  /* GALLERY STYLES */
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery .col {
+    padding: 1em;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+    height: auto;
+    white-space: nowrap;
+    width: 100vw;
+  }
+  .gallery-thumbs > div {
+    display: inline-block;
+  }
+  .gallery-thumbs img {
+    height: 7vh;
+    margin: 0 10px 0 0;
+    width: auto;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
 }
